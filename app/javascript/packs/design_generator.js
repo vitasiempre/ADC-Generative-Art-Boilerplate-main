@@ -6,8 +6,8 @@ import synapse1 from '/app/assets/images/synapse-1.svg'
 import synapse2 from '/app/assets/images/synapse-2.svg'
 import synapse3 from '/app/assets/images/synapse-3.svg'
 
-const colors = ['black', 'pink', 'grey', "#4000C7"]
-const backcolors = ['black', 'pink', "#4000C7"]
+const colors = ['#46A14A', '#60BCE3', '#D251D5', "#D9D9D9", "#FDE04A"]
+const backcolors = ['#46A14A', '#60BCE3', '#D251D5', "#D9D9D9", "#FDE04A"]
 
 
 
@@ -41,14 +41,14 @@ function createSynapses(frame) {
     synapse.setAttribute("fill", "red")
 
     let left = i * 2 * gridModule + gridModule
-    let top
+    let top = gridModule
 
     for (var b = 0; b <= (rows / 2 - 2); b++) {
       top = b * gridModule
       console.log('top', top);
 
       let rotateAngle = Math.floor(getRandomArbitrary(1,4)) * 90
-      synapse.style.top = `${top}px`
+      synapse.style.transform = `translate(${left}px, ${top}px) rotate(${rotateAngle}deg)`
 
 
       frame.appendChild(synapse)

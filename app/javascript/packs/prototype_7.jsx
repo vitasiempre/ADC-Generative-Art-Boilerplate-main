@@ -3,16 +3,13 @@ import {sample, getRandomArbitrary} from "./utilities.js"
 import React from 'react'
 import ReactDOM from 'react-dom'
 import html2canvas from 'html2canvas'
-import Editor from '../containers/Editor'
-
-
-
+import Screen from '../containers/Screen'
 
 
 document.addEventListener('DOMContentLoaded', () => {
 
   ReactDOM.render(
-    <Editor />,
+    <Screen />,
     document.body.appendChild(document.createElement('div'))
     // container.appendChild(frame),
     // generateDesign(frame)
