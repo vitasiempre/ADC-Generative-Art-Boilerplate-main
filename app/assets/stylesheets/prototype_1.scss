@@ -1,0 +1,21 @@
+body {
+  display: flex;
+}
+
+.frame {
+  position: relative;
+  width:500px;
+  height: 900px;
+  background-color: #396F19;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  // top: 100px;
+  // left: 100px;
+  // width: 100px;
+  // height: 100px;
+  // background-color: yellow;
+  border-radius: 900px;
+}

@@ -1,0 +1,4 @@
+<%= stylesheet_link_tag "styles", media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag "prototype_#{@prototype.id}", 'data-turbolinks-track': 'reload' %>
+
+<div class="prototype_<%= @prototype.id %>" id="prototype_<%= @prototype.id %>"></div>

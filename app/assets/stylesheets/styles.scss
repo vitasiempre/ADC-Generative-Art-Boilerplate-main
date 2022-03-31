@@ -1,0 +1,28 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  shape-rendering: auto
+}
+
+.text {
+  position: absolute;
+  width: 50vw;
+  font-size: 120px;
+  line-height: 80%;
+  color: white;
+  letter-spacing: -6px;
+}
+
+.synapse {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+div svg path {
+  stroke: red;
+}
+
+//сделать справа и слева марджины, чтобы курги не могли за них выходить
+// поделить ширину кенваса
