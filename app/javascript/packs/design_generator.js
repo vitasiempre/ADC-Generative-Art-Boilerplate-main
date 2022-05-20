@@ -43,7 +43,7 @@ function createSynapses(frame) {
     let left = i * 2 * gridModule + gridModule
     let top = gridModule
 
-    for (var b = 0; b <= (rows / 2 - 2); b++) {
+    for (var b = 0; b <= (20); b++) {
       top = b * gridModule
       console.log('top', top);
 

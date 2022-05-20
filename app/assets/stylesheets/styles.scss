@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #242528;
+  // background-color: #242528;
 }
 
 h2, p {
@@ -72,7 +72,7 @@ h2, p {
   width: 50vw;
   font-size: 120px;
   line-height: 80%;
-  color: #242528;
+  color: white;
   letter-spacing: -6px;
 }
 
@@ -85,6 +85,19 @@ h2, p {
 
 div svg path {
   stroke: red;
+}
+
+.circle {
+  border-radius: 50%;
+  transition: all 0.3s ease;
+
+  &#price {
+    background-color: red;
+  }
+
+  &#spread {
+    background-color: blue;
+  }
 }
 
 //сделать справа и слева марджины, чтобы курги не могли за них выходить
